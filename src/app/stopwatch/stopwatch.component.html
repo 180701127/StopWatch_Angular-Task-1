@@ -1,0 +1,9 @@
+<div class="stopwatch-container">
+    <div class="time-display">
+        {{ displayTime }}
+    </div>
+    <button (click)="START()" [disabled]="isRunning">start</button>
+    <button (click)="STOP()" [disabled]="!isRunning">stop</button>
+    <button (click)="RESET()" [disabled]="isRunning">reset</button>
+</div>
+
